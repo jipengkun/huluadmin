@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: upacp:sdk.1.0.0:20150703140550">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/upacp/sdk.1.0.0/20150703140550/sdk.1.0.0-20150703140550.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/upacp/sdk.1.0.0/20150703140550/sdk.1.0.0-20150703140550-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/upacp/sdk.1.0.0/20150703140550/sdk.1.0.0-20150703140550-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

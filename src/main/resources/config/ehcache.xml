@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+	
+	<diskStore path="/www/web_ehcache/openapi/" /> 
+
+
+	<!-- 永不失效的Cache start -->
+    <cache name="Forever"
+            maxElementsInMemory="3000"
+            maxElementsOnDisk="7000"
+            eternal="true"
+            overflowToDisk="true"
+            diskSpoolBufferSizeMB="20"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="100"
+            memoryStoreEvictionPolicy="LRU"
+     />
+    <!-- 永不失效的Cache e n d -->
+    <!-- 1分钟Idle失效的Cache start -->
+    <cache name="Idle_1M"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="60"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 1分钟Idle失效的Cache e n d -->
+	<!-- 5分钟Idle失效的Cache start -->
+    <cache name="Idle_5M"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 5分钟Idle失效的Cache e n d -->
+    <!-- 1小时Idle失效的Cache start -->
+    <cache name="Idle_1H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 1小时Idle失效的Cache e n d -->
+    <!-- 6小时Idle失效的Cache start -->
+    <cache name="Idle_6H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="21600"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 6小时Idle失效的Cache e n d -->
+    <!-- 12小时Idle失效的Cache start -->
+    <cache name="Idle_12H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="43200"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 1小时Idle失效的Cache e n d -->
+    <!-- 24小时Idle失效的Cache start -->
+    <cache name="Idle_24H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="86400"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 24小时Idle失效的Cache e n d -->
+    <!-- 1分钟Live失效的Cache start -->
+    <cache name="Live_1M"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="60"
+           timeToLiveSeconds="60"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 1分钟Live失效的Cache e n d -->
+    <!-- 5分钟Live失效的Cache start -->
+    <cache name="Live_5M"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="300"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 5分钟Live失效的Cache e n d -->
+    <!-- 1小时Live失效的Cache start -->
+    <cache name="Live_1H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="3600"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 1小时Live失效的Cache e n d -->
+    <!-- 6小时Live失效的Cache start -->
+    <cache name="Live_6H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="21600"
+           timeToLiveSeconds="21600"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 6小时Live失效的Cache e n d -->
+    <!-- 12小时Live失效的Cache start -->
+    <cache name="Live_12H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="43200"
+           timeToLiveSeconds="43200"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 12小时Live失效的Cache e n d -->
+    <!-- 24小时Live失效的Cache start -->
+    <cache name="Live_24H"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="86400"
+           timeToLiveSeconds="86400"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- 24小时Live失效的Cache e n d -->
+    <!-- Token失效的Cache start -->
+    <cache name="Token"
+           maxElementsInMemory="3000"
+           maxElementsOnDisk="7000"
+           eternal="false"
+           overflowToDisk="true"
+           diskPersistent="true"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="2073600"
+           timeToLiveSeconds="2073600"
+           memoryStoreEvictionPolicy="LFU"
+	/>
+    <!-- Token失效的Cache e n d -->
+</ehcache> 
